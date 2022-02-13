@@ -11,19 +11,19 @@
 </head>
 
 <body>
-    <div class="container my-5">
+    <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="pin-generator half-width">
                     <input id="pin-feild" class="form-control" type="text">
-                    <button  onclick="generatePin()" class="generate-btn">Generate Pin</button>
+                    <button id="pin-btn" class="generate-btn">Generate Pin</button>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input id="typed-numbers" class="form-control" type="text">
+                    <input id="number-feild" class="form-control" type="text">
                     <div class="numbers">
-                        <div id="key-pad" class="calc-body">
+                        <div id="number" class="calc-body">
                             <div class="calc-button-row">
                                 <div class="button">7</div>
                                 <div class="button">8</div>
@@ -45,19 +45,22 @@
                                 <div class="button">C</div>
                             </div>
                             <div>
-                                <button onclick="verifyPin()" type="submit" class="submit-btn">Submit</button>
-                                <p class="action-left"><span id="try">3</span> try left</p>
+                                <button id="submit-btn" type="submit" class="submit-btn" >Submit</button>
+                                <p id="try" class="action-left"><span id="try-left">3</span> try left</p>
+                                <p id="faild-message" class="text-danger mt-2 fs-4">You tried maximum time...! Try again after 30 min.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="notify-section">
-                <p id="not-match"  class="notify">❌ Pin Didn't Match, Please try again</p>
-                <p id="match" class="notify mb-5">✅ Pin Matched... Secret door is opening for you</p>
+                <p id="not-match" class="notify">❌ Pin Didn't Match, Please try again</p>
+                <p id="match" class="notify">✅ Pin Matched... Secret door is opening for you</p>
             </div>
         </div>
     </div>
+
+
     <script src="app.js"></script>
 </body>
 

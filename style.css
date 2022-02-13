@@ -86,6 +86,7 @@ input[type="text"]:focus {
   border-radius: 5px;
   background: #495bc3;
   color: #fff;
+  cursor: pointer;
 }
 .notify {
   color: #fff;
@@ -104,4 +105,7 @@ input[type="text"]:focus {
 .action-left {
   color: #ff3c5f;
   margin-top: 10px;
+}
+#faild-message {
+  display: none;
 }
