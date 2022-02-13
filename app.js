@@ -42,3 +42,8 @@ function verifyPin() {
     match.style.display = "none";
   }
 }
+// let numberOfTry = document.getElementById("try").innerText;
+// console.log(numberOfTry);
+// numberOf = parseInt(numberOfTry) - 1;
+// console.log(numberOf);
+// numberOfTry.innerText = numberOf;
